@@ -7,7 +7,7 @@ public class Zad1 {
         if(str.isEmpty() || subStr.isEmpty() || subStr.length() > str.length()){
             return 0;
         }
-        for(int i = 0; i < str.length() - subStr.length(); i++){
+        for(int i = 0; i < str.length() - subStr.length() + 1; i++){
             if(str.substring(i, i+ subStr.length()).equals(subStr)){
                 wynik +=1;
             }
